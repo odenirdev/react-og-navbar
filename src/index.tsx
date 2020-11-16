@@ -1,10 +1,7 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import Navbar from './components/Navbar'
+import Aside from './components/Aside'
+import Footer from './components/Footer'
 
-interface Props {
-  text: string
-}
+export { Aside, Footer }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export default Navbar
