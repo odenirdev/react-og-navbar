@@ -5,6 +5,7 @@ import GlobalStyle from './global'
 import Routes from './routes'
 
 import 'highlight.js/styles/dracula.css'
+import 'react-og-navbar/dist/index.css'
 
 WebFont.load({
   google: {

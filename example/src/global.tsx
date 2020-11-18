@@ -6,7 +6,6 @@ const Index = createGlobalStyle`
     --primary-color: #191919;
     --secundary-color: #FAFAFA;
     --title-font: Roboto;
-    --content-font: Nunito;
   }
 
   * {
@@ -28,6 +27,7 @@ const Index = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--title-font);
+    margin-top: 1.1rem;
   }
 
   .icones {

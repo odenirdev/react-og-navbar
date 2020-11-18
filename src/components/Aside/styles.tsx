@@ -6,6 +6,7 @@ export const Container = Styled.nav.attrs({
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
 
   height: 100vh;
   width: 5vw;
@@ -30,6 +31,10 @@ export const Container = Styled.nav.attrs({
 
     .react-og-icon {
       width: 40%;
+    }
+
+    .react-og-aside-main {
+      padding-left: 15vw;
     }
   }
 
@@ -120,5 +125,22 @@ export const Bottom = Styled.div`
   @media (max-width: 750px) {
     margin-top: initial;
     padding-top: initial;
+  }
+`
+
+export const Main = Styled.main.attrs({
+  className: 'react-og-aside-main'
+})`
+  width: 100%;
+  min-height: 100vh;
+
+  position: absolute;
+  z-index: 0;
+  top: 0;
+
+  padding: 0 1vw 1vh 6vw ;
+
+  @media (max-width: 750px) {
+    padding: 0 5vw 11vh 5vw;
   }
 `
